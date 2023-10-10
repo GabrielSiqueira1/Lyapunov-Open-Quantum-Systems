@@ -13,4 +13,17 @@ Para que possamos entender a complexidade de um sistema quântico e como o ambie
 Para reforçar a importância do ensamble, analisaremos a situação dos átomos de de prata saindo diretamente de um forno aquecido anteriormente a passagem por um filtro do tipo SG. Dessa forma, sem o filtro, não saberiamos em que direção a partícula estará já que esta não tem um preferência, ou não deveria ter. Somente com a definição de $\ket{\psi} = c_0\ket{0} + c_1\ket{1}$ não é suficiente para entender a direção de uma partícula. Com isso em mente, utilizaremos do conceito de peso probabilístico, para verificarmos de modo estatístico, quais membros podem ser caracterizados em um determinado tipo dentro de um ensemble. Essa nova proposta possibilita uma combinação, de modo que possa ser possível ter uma mistura 50-50 de $\ket{S_x;+}$ e $\ket{S_x;-}$.
 
 A mecânica quântica se baseia na medição de observáveis, então suponha que tenhamos feito uma medida de algum observável A em um ensemble misto, uma certa fração em um estado e o resto noutro. Como a mecânica quântica tem um problema nas medições de partículas, o estudo do valor esperado é importante, dessa forma, suponha que o valor esperado de um observável A queira ser medido após diversas medições terem sido realizadas. Podemos obter esse valor por meio da média sobre o ensemble do observável A, que definimos como: 
-$$ [A] = \sum_i w_i \bra{\alpha^{(i)}}A\ket{\alpha^{(i)}} $$
+
+$$ [A] = \sum_i w_i \bra{ \alpha^{(i)} } A \ket{ \alpha^{(i)} }  $$
+
+Sabendo que $A\ket{a} = a\ket{a}$, visto que a representa um autoestado do observável, e ainda que $A = A\ket{a}\bra{a}$. Concluí-se que:
+
+$$ [A] = \sum_i \sum_{a} w_i| \bra{a}\ket{\alpha^{(i)} } |^2 a $$
+
+Acima, percebe-se que os conceitos probabilísticos são referidos duas vezes, se apresenta no módulo, que simboliza a probabilidade quântica de um estado ser encontrado em um autoestado de um observável, e também se apresenta no peso. Quando generalizamos o procedimento acima com as bases $b^{'}$ e $b^{''}$ acabamos gerando o mesmo termo generalizado, do qual chamaremos de operador densidade.
+
+$$\rho = \sum_i w_i \bra{ a^{(i)} }\ket{ a^{(i)} }$$
+
+Dessa forma, o operador densidade representa o ensemble estudado em que a sua diagonal secundária representa a composição de estados, enquanto a diagonal principal representa as estatísticas de um estado.
+
+## A interpretação da equação acima para um sistema simples, $\sigma_z$
