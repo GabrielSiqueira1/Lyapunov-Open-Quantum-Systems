@@ -8,3 +8,4 @@ Essa equação é importante pois demonstra o acoplamento de um sistema quântic
 
 ## Interpretação da matriz de densidade
 
+Para que possamos entender a complexidade de um sistema quântico e como o ambiente age no meio, é importante caracterizar o que é um ensemble. Na mecânica quântica inicial, realizanmos previsões acerca de um sistema, tal como o sistema formado por $\ket{\psi} = 0.60\ket{0} + 0.80\ket{1}$, no entanto, com a ação do ambiente, evidenciamos uma mistura de estados. De modo mais preciso, em um ensemble supõe-se que todos os membros que dele fazem parte sejam caracterizados por um mesmo ket de estado $\ket{\alpha}$ [Sakurai e Napolitano, 2013]. Portanto, até o momento, e nas outras pesquisas, retratamos o ensemble como sendo $100\% \psi$, mas não sabemos o que poderiamos fazer se ocorresse $60%$ de um estado e $40%$ do outro. 
