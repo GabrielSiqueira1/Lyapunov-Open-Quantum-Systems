@@ -26,4 +26,4 @@ $$\rho = \sum_i w_i \bra{ a^{(i)} }\ket{ a^{(i)} }$$
 
 Dessa forma, o operador densidade representa o ensemble estudado em que a sua diagonal secundária representa a composição de estados, enquanto a diagonal principal representa as estatísticas de um estado.
 
-## A interpretação da equação acima para um sistema simples, $\sigma_z$
+## A interpretação da equação acima para um sistema simples, $ \sigma_z $
