@@ -8,5 +8,5 @@ function S=lyap(Ut, Uf, X)
     
     L = W - eye(3) - 1/2*(W - eye(3))^2;
     
-    S=2*trace((-1/2*C*T - 1/2*T*C + 2*C)*L);
+    S=2*trace((-T*C + 2*C)*L);
 end
