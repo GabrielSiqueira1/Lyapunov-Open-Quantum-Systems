@@ -1,4 +1,4 @@
-function dUdt=lind(u, Ut, Uf, t, lambda)
+function [fx,fy,fz,dUdt]=lind(u, Ut, Uf, t, lambda)
 
     Ax=[0 0 0; 0 0 -1; 0 1 0];
     Ay=[0 0 1; 0 0 0; -1 0 0];
@@ -6,7 +6,10 @@ function dUdt=lind(u, Ut, Uf, t, lambda)
     B=lambda*[-1 0 0; 0 -1 0; 0 0 -2];
     
     if t == 0
-	    F=10.28*Ax+10.73*Ay+40*Az+B;
+        fx=10.28;
+        fy=10.73;
+        fz=40;
+	    F=fx*Ax+fy*Ay+fz*Az+B;
 
         dUdt=F;
     else
