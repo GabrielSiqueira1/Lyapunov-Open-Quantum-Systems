@@ -8,8 +8,8 @@ lambda=0.01
 
 Ut=[1 0 0; 0 1 0; 0 0 1]
 Uf=[0 0 1; 0 -1 0; 1 0 0]
-F=(trace(Ut*Ut')+abs(trace(Uf'*Ut))^2)/(3*(3+1))
-D=norm(Ut-Uf)^2 
+F=(trace(Ut*Ut')+abs(trace(Uf'*Ut))^2)/(3*(3+1)) %Melhor utilizar a fidelidade baseada nas matrizes de densidade?
+D=norm(Ut-Uf)^2 %Só faz sentido se a fidelidade for baseada na matriz de evolução
 
 % Vetores para os controles utilizados
 fx = [];
@@ -23,8 +23,8 @@ while t <= 0.1
     fx = [fx, a];
     fy = [fy, b];
     fz = [fz, c];
-	F=(trace(Ut*Ut')+abs(trace(Uf'*Ut))^2)/(3*(3+1))
-	D=norm(Ut-Uf)^2
+    F=(trace(Ut*Ut')+abs(trace(Uf'*Ut))^2)/(3*(3+1))
+    D=norm(Ut-Uf)^2
     t_vetor = [t_vetor, t]; 
 	t=t+h
 end
