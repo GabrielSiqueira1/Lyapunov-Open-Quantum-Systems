@@ -12,12 +12,7 @@ pip install numpy scipy matplotlib jupyter sympy
 
 Diferentemente do repositório anterior, este se propõe a utilizar um sistema de controle não aplicado a indústria, mas muito utilizado em pós-graduações de Engenharias Elétrica e Computação.
 
-# Sumário
-
-1. [Atividade 1 - Método de controle de Lyapunov](#atividade-1---método-de-controle-de-lyapunov)
-2. [Atividade 2 - Portas quânticas](#atividade-2---portas-quânticas)
-
-## Atividade 1 - Método de controle de Lyapunov
+## Método de controle de Lyapunov
 
 O método de controle de Lyapunov se baseia na estabilidade de um sistema de controle, afinal, um sistema instável se torna inseguro. Para quantificar essa estabilidade, faz-se o uso da função de Lyapunov, $V(x,t)$. Essa função deve ser semidefinida positiva, $V(x,t) > 0$ e a sua derivada, semidefinida negativa, $ \dot V(x,t) < 0$, ou seja, ao longo do tempo, a função de Lyapunov estará limitada de modo a não extrapolar. 
 A função de Lyapunov pode ser aplicada a sistemas quânticos, como é o caso desse repositório. Utilizando como base o [artigo da Dra. Shuang Cong](https://ieeexplore.ieee.org/document/8332145), $V(t) = ||L(t)||^2 = tr(L^\dagger(t)L(t))$, onde $L(t) = W(t) - I - \frac{1}{2}(W(t) - I)^2$ e este $W(t) = U_f^\dagger U(t)$.
